@@ -112,8 +112,9 @@
 
 // #way: 2
 
-var num1 = 5;
-var num2 = 7;
-console.log(num1, num2);
-[num1, num2] = [num2, num1];
-console.log(num1, num2);
+// var num1 = 5;
+// var num2 = 7;
+// console.log(num1, num2);
+// [num1, num2] = [num2, num1];
+// console.log(num1, num2);
+
