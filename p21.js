@@ -12,12 +12,19 @@
 
 // toUpperCase
 
-var admin = "Ahanf";
-var pass = "Ahnaf";
+// var admin = "Ahanf";
+// var pass = "Ahnaf";
 
-if(admin.toUpperCase === pass.toUpperCase){
-    console.log("login");
-}
-else{
-    console.log("invalid user");
-}
+// if(admin.toUpperCase === pass.toUpperCase){
+//     console.log("login");
+// }
+// else{
+//     console.log("invalid user");
+// }
+
+// ------------------------------
+// Includes:
+
+var identity = "Ahnaf Akib";
+var searchResult = identity.includes("Akib");
+console.log(searchResult);
