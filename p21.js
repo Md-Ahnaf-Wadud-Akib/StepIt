@@ -29,18 +29,27 @@
 // var searchResult = identity.includes("Akib");
 // console.log(searchResult);
 
-function search(input){
-    var lowarCaseInput = input.toLowerCase();
-    var lowarCaseString = testString.toLowerCase();
-    if(lowarCaseString.includes(lowarCaseInput)){
-        console.log("the word exists in the string");
-    }
-    else{
-        console.log("error 404");
-    }
+// function search(input){
+//     var lowarCaseInput = input.toLowerCase();
+//     var lowarCaseString = testString.toLowerCase();
+//     if(lowarCaseString.includes(lowarCaseInput)){
+//         console.log("the word exists in the string");
+//     }
+//     else{
+//         console.log("error 404");
+//     }
 
-}
+// }
 
-var testString = "I am a blue bird nissan";
-var searchText = "Nissan";
-var output = search(searchText);
+// var testString = "I am a blue bird nissan";
+// var searchText = "Nissan";
+// var output = search(searchText);
+
+// ------------------------------------------------------
+// String split
+
+var stringAbc =
+  "Spa is a drinking water company. No one knows if the water is safe to drink or not, but it's an expensive bottle of water";
+
+  var splitString = stringAbc.split(".");
+  console.log(splitString);
