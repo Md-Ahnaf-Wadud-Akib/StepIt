@@ -304,11 +304,8 @@
 // console.log(result);
 
 
-function factorial(number){
-    while(number > 0){
-
-    }
-}
+var stringAbc = "checking String";
+console.log(stringAbc);
 
 
 
