@@ -92,8 +92,28 @@
 // var output = friendRequest(student1Mark, student2mark);
 // console.log(output);
 
-var randomNumber = Math.random()*10;
-console.log(randomNumber);
-console.log(Math.round(randomNumber));
-console.log(Math.ceil(randomNumber));
-console.log(Math.floor(randomNumber));
+// var randomNumber = Math.random()*10;
+// console.log(randomNumber);
+// console.log(Math.round(randomNumber));
+// console.log(Math.ceil(randomNumber));
+// console.log(Math.floor(randomNumber));
+
+// ------------------------------
+// Destructuring 
+// #way: 1
+// var value1 = 5;
+// var value2 = 7;
+// console.log(value1, value2);
+// const temp = 5;
+
+// value1 = value2;
+// value2 = temp;
+// console.log(value1, value2);
+
+// #way: 2
+
+var num1 = 5;
+var num2 = 7;
+console.log(num1, num2);
+[num1, num2] = [num2, num1];
+console.log(num1, num2);
