@@ -77,17 +77,23 @@
 // var gap = Math.abs(student1 - student2);
 // console.log(gap);
 
-function friendRequest(value1, value2){
-    if(value1 > value2){
-        var difference = value1 - value2;
-    }
-    else{
-        difference = value2 - value1;
-    }
-    return difference;
-}
+// function friendRequest(value1, value2){
+//     if(value1 > value2){
+//         var difference = value1 - value2;
+//     }
+//     else{
+//         difference = value2 - value1;
+//     }
+//     return difference;
+// }
 
-var student1Mark = 20;
-var student2mark = 30;
-var output = friendRequest(student1Mark, student2mark);
-console.log(output);
+// var student1Mark = 20;
+// var student2mark = 30;
+// var output = friendRequest(student1Mark, student2mark);
+// console.log(output);
+
+var randomNumber = Math.random()*10;
+console.log(randomNumber);
+console.log(Math.round(randomNumber));
+console.log(Math.ceil(randomNumber));
+console.log(Math.floor(randomNumber));
