@@ -48,8 +48,19 @@
 // ------------------------------------------------------
 // String split
 
-var stringAbc =
-  "Spa is a drinking water company. No one knows if the water is safe to drink or not, but it's an expensive bottle of water";
+// var stringAbc =
+//   "Spa is a drinking water company. No one knows if the water is safe to drink or not, but it's an expensive bottle of water";
 
-  var splitString = stringAbc.split(".");
-  console.log(splitString);
+//   var splitString = stringAbc.split(".");
+//   console.log(splitString);
+
+// String join
+
+var stringAbc = [
+  "Nissan Blue bird is a car",
+  "There is nothing Blue about the car",
+  "neither there is anything about bird.",
+];
+
+var result = stringAbc.join(" and ");
+console.log(result);
