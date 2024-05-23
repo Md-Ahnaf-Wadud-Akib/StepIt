@@ -69,5 +69,25 @@
 // -----------------------------------------
 // Js math properties
 
-var power = Math.pow(2, 2);
-console.log(power);
+// var power = Math.pow(2, 2);
+// console.log(power);
+
+// var student1 = 20;
+// var student2 = 30;
+// var gap = Math.abs(student1 - student2);
+// console.log(gap);
+
+function friendRequest(value1, value2){
+    if(value1 > value2){
+        var difference = value1 - value2;
+    }
+    else{
+        difference = value2 - value1;
+    }
+    return difference;
+}
+
+var student1Mark = 20;
+var student2mark = 30;
+var output = friendRequest(student1Mark, student2mark);
+console.log(output);
