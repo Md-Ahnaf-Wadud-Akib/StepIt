@@ -54,13 +54,20 @@
 //   var splitString = stringAbc.split(".");
 //   console.log(splitString);
 
+// --------------------------------------
 // String join
 
-var stringAbc = [
-  "Nissan Blue bird is a car",
-  "There is nothing Blue about the car",
-  "neither there is anything about bird.",
-];
+// var stringAbc = [
+//   "Nissan Blue bird is a car",
+//   "There is nothing Blue about the car",
+//   "neither there is anything about bird.",
+// ];
 
-var result = stringAbc.join(" and ");
-console.log(result);
+// var result = stringAbc.join(" and ");
+// console.log(result);
+
+// -----------------------------------------
+// Js math properties
+
+var power = Math.pow(2, 2);
+console.log(power);
