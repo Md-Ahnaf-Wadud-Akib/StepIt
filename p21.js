@@ -25,6 +25,22 @@
 // ------------------------------
 // Includes:
 
-var identity = "Ahnaf Akib";
-var searchResult = identity.includes("Akib");
-console.log(searchResult);
+// var identity = "Ahnaf Akib";
+// var searchResult = identity.includes("Akib");
+// console.log(searchResult);
+
+function search(input){
+    var lowarCaseInput = input.toLowerCase();
+    var lowarCaseString = testString.toLowerCase();
+    if(lowarCaseString.includes(lowarCaseInput)){
+        console.log("the word exists in the string");
+    }
+    else{
+        console.log("error 404");
+    }
+
+}
+
+var testString = "I am a blue bird nissan";
+var searchText = "Nissan";
+var output = search(searchText);
