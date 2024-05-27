@@ -127,11 +127,32 @@
 
 // Practice problem 3
 
-var inputValue = 3;
+// var inputValue = 3;
 
-if(inputValue % 2 === 0){
-    console.log("Your iput value is: Even");
+// if(inputValue % 2 === 0){
+//     console.log("Your input value is: Even");
+// }
+// else{
+//     console.log("Your input value is: Odd");
+// }
+
+// Practice problem 4
+
+function largestValue(value1, value2, value3){
+    if(value1 >= value2 && value1 >= value3){
+        return value1;
+    }
+    else if(value2 >= value1 && value2 >= value3){
+        return value2;
+    }
+    else{
+        return value3
+    }
 }
-else{
-    console.log("Your input value is: Odd");
-}
+
+let num1 = 9;
+let num2 = 6;
+let num3= 23;
+
+let result = largestValue(num1, num2, num3);
+console.log("The Largest value is: ", result);
