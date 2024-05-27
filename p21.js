@@ -138,21 +138,35 @@
 
 // Practice problem 4
 
-function largestValue(value1, value2, value3){
-    if(value1 >= value2 && value1 >= value3){
-        return value1;
+// function largestValue(value1, value2, value3){
+//     if(value1 >= value2 && value1 >= value3){
+//         return value1;
+//     }
+//     else if(value2 >= value1 && value2 >= value3){
+//         return value2;
+//     }
+//     else{
+//         return value3
+//     }
+// }
+
+// let num1 = 9;
+// let num2 = 6;
+// let num3= 23;
+
+// let result = largestValue(num1, num2, num3);
+// console.log("The Largest value is: ", result);
+
+function factorial(value){
+    let sum = 1;
+    let i;
+    for(i = value; i > 0; i--){
+        sum = sum * i;
     }
-    else if(value2 >= value1 && value2 >= value3){
-        return value2;
-    }
-    else{
-        return value3
-    }
+    return sum;
 }
 
-let num1 = 9;
-let num2 = 6;
-let num3= 23;
+let inputValue = 3;
 
-let result = largestValue(num1, num2, num3);
-console.log("The Largest value is: ", result);
+let result = factorial(inputValue);
+console.log("The factorial of ", inputValue, "is: ", result);
