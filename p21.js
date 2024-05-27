@@ -118,9 +118,20 @@
 // [num1, num2] = [num2, num1];
 // console.log(num1, num2);
 
-var num1 = 12;
-var num2 = 8;
-var sum = 0;
+// var num1 = 12;
+// var num2 = 8;
+// var sum = 0;
 
-sum = num1 + num2;
-console.log("your sum is: ", sum);
+// sum = num1 + num2;
+// console.log("your sum is: ", sum);
+
+// Practice problem 3
+
+var inputValue = 3;
+
+if(inputValue % 2 === 0){
+    console.log("Your iput value is: Even");
+}
+else{
+    console.log("Your input value is: Odd");
+}
