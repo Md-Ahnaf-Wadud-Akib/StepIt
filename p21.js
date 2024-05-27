@@ -157,16 +157,33 @@
 // let result = largestValue(num1, num2, num3);
 // console.log("The Largest value is: ", result);
 
-function factorial(value){
-    let sum = 1;
-    let i;
-    for(i = value; i > 0; i--){
-        sum = sum * i;
-    }
-    return sum;
-}
+// function factorial(value){
+//     let sum = 1;
+//     let i;
+//     for(i = value; i > 0; i--){
+//         sum = sum * i;
+//     }
+//     return sum;
+// }
 
-let inputValue = 3;
+// let inputValue = 3;
 
-let result = factorial(inputValue);
-console.log("The factorial of ", inputValue, "is: ", result);
+// let result = factorial(inputValue);
+// console.log("The factorial of ", inputValue, "is: ", result);
+
+
+// problem 6: reverse a string
+
+let stringAbc = "Ahnaf Akib";
+
+let splitString = stringAbc.split("");
+let reverseString = splitString.reverse();
+let joinString = reverseString.join("");
+
+let result = joinString;
+console.log("The reversed string is: ", result);
+
+// simple way to do it:
+
+let reversedString = stringAbc.split("").reverse().join("");
+console.log(reversedString);
