@@ -243,16 +243,32 @@ function maxNumber(value1, value2, value3){
 }
 
 
-const jim = 84;
-const dela = 99;
-const chinku = 77;
+// const jim = 84;
+// const dela = 99;
+// const chinku = 77;
 
-let result = maxNumber(jim, dela, chinku);
-console.log("the largest value is: ", result);
+// let result = maxNumber(jim, dela, chinku);
+// console.log("the largest value is: ", result);
 
-Math.max(jim, dela, chinku);
+// Math.max(jim, dela, chinku);
 
-let abc = "Ahnaf and Akib";
+// let abc = "Ahnaf and Akib";
 
-let result1 = abc.split("and");
-console.log(result1);
+// let result1 = abc.split("and");
+// console.log(result1);
+
+function maxValue(inputArray){
+    let maximum = inputArray[0];
+    for(let i = 0; i < inputArray.length; i++){
+        let arrayIndex = i;
+        let arrayElement = inputArray[arrayIndex];
+        if(maximum < arrayElement){
+            maximum = arrayElement;
+        }
+    }
+    return maximum;
+}
+
+let abcArray = [2, 3, 4, 5, 6, 9, 8, 7];
+let largestNumber = maxValue(abcArray);
+console.log("the largest value is: ", largestNumber);
