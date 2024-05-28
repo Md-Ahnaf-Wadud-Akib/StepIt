@@ -174,16 +174,35 @@
 
 // problem 6: reverse a string
 
-let stringAbc = "Ahnaf Akib";
+// let stringAbc = "Ahnaf Akib";
 
-let splitString = stringAbc.split("");
-let reverseString = splitString.reverse();
-let joinString = reverseString.join("");
+// let splitString = stringAbc.split("");
+// let reverseString = splitString.reverse();
+// let joinString = reverseString.join("");
 
-let result = joinString;
-console.log("The reversed string is: ", result);
+// let result = joinString;
+// console.log("The reversed string is: ", result);
 
-// simple way to do it:
+// // simple way to do it:
 
-let reversedString = stringAbc.split("").reverse().join("");
-console.log(reversedString);
+// let reversedString = stringAbc.split("").reverse().join("");
+// console.log(reversedString);
+
+function fizzBuzz(inputValue){
+    for(let i = 0; i <= inputValue; i++){
+        if(i % 3 == 0 && i % 5 == 0){
+            console.log("FizzBuzz");
+        }
+        else if( i % 3 == 0){
+            console.log("Fizz");
+        }
+        else if( i % 5 == 0){
+            console.log("Buzz");
+        }
+        else{
+            console.log(i);
+        }
+    }
+}
+let input = 100;
+let result = fizzBuzz(input);
