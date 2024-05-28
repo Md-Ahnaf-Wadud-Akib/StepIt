@@ -252,3 +252,7 @@ console.log("the largest value is: ", result);
 
 Math.max(jim, dela, chinku);
 
+let abc = "Ahnaf and Akib";
+
+let result1 = abc.split("and");
+console.log(result1);
