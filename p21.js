@@ -257,18 +257,34 @@ function maxNumber(value1, value2, value3){
 // let result1 = abc.split("and");
 // console.log(result1);
 
-function maxValue(inputArray){
-    let maximum = inputArray[0];
-    for(let i = 0; i < inputArray.length; i++){
-        let arrayIndex = i;
-        let arrayElement = inputArray[arrayIndex];
-        if(maximum < arrayElement){
-            maximum = arrayElement;
-        }
+// function maxValue(inputArray){
+//     let maximum = inputArray[0];
+//     for(let i = 0; i < inputArray.length; i++){
+//         let arrayIndex = i;
+//         let arrayElement = inputArray[arrayIndex];
+//         if(maximum < arrayElement){
+//             maximum = arrayElement;
+//         }
+//     }
+//     return maximum;
+// }
+
+// let abcArray = [2, 3, 4, 5, 6, 9, 8, 7];
+// let largestNumber = maxValue(abcArray);
+// console.log("the largest value is: ", largestNumber);
+
+function reverseString(inputString){
+    let reversed = [];
+    for(i = inputString.length - 1; i >= 0; i--){
+        let index = i;
+        let element = inputString[index];
+        console.log(element);
+        reversed.push(element);
     }
-    return maximum;
+    reversed = reversed.join("");
+    return reversed;
 }
 
-let abcArray = [2, 3, 4, 5, 6, 9, 8, 7];
-let largestNumber = maxValue(abcArray);
-console.log("the largest value is: ", largestNumber);
+let abcString = "I am Ahnaf";
+let result = reverseString(abcString);
+console.log(result);
