@@ -188,21 +188,36 @@
 // let reversedString = stringAbc.split("").reverse().join("");
 // console.log(reversedString);
 
-function fizzBuzz(inputValue){
-    for(let i = 0; i <= inputValue; i++){
-        if(i % 3 == 0 && i % 5 == 0){
-            console.log("FizzBuzz");
-        }
-        else if( i % 3 == 0){
-            console.log("Fizz");
-        }
-        else if( i % 5 == 0){
-            console.log("Buzz");
-        }
-        else{
-            console.log(i);
-        }
+// function fizzBuzz(inputValue){
+//     for(let i = 0; i <= inputValue; i++){
+//         if(i % 3 == 0 && i % 5 == 0){
+//             console.log("FizzBuzz");
+//         }
+//         else if( i % 3 == 0){
+//             console.log("Fizz");
+//         }
+//         else if( i % 5 == 0){
+//             console.log("Buzz");
+//         }
+//         else{
+//             console.log(i);
+//         }
+//     }
+// }
+// let input = 100;
+// let result = fizzBuzz(input);
+
+function sumOfArray(arrayInput){
+    let sum = 0;
+    for(let i = 0; i < arrayInput.length; i++){
+        let arrayIndex = i;
+        let arrayElement = arrayInput[arrayIndex];
+        sum = sum + arrayElement;
+        
     }
+    return sum;
 }
-let input = 100;
-let result = fizzBuzz(input);
+
+let abcArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let result = sumOfArray(abcArray);
+console.log(result);
