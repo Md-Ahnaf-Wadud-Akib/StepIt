@@ -207,17 +207,45 @@
 // let input = 100;
 // let result = fizzBuzz(input);
 
-function sumOfArray(arrayInput){
-    let sum = 0;
-    for(let i = 0; i < arrayInput.length; i++){
-        let arrayIndex = i;
-        let arrayElement = arrayInput[arrayIndex];
-        sum = sum + arrayElement;
+// function sumOfArray(arrayInput){
+//     let sum = 0;
+//     for(let i = 0; i < arrayInput.length; i++){
+//         let arrayIndex = i;
+//         let arrayElement = arrayInput[arrayIndex];
+//         sum = sum + arrayElement;
         
+//     }
+//     return sum;
+// }
+
+// let abcArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let result = sumOfArray(abcArray);
+// console.log(result);
+
+// let a = 2;
+// let b = 3;
+
+// a = a + b;
+// b = a - b;
+// a = a - b;
+// console.log(a, b);
+
+function maxNumber(value1, value2, value3){
+    if(value1 > value2 && value1 > value3){
+        return value1;
     }
-    return sum;
+    else if(value2 > value1 && value2 > value3){
+        return value2;
+    }
+    else{
+        return value3;
+    }
 }
 
-let abcArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let result = sumOfArray(abcArray);
-console.log(result);
+
+const jim = 84;
+const dela = 99;
+const chinku = 77;
+
+let result = maxNumber(jim, dela, chinku);
+console.log("the largest value is: ", result);
