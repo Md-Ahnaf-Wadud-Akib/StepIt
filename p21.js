@@ -273,18 +273,34 @@ function maxNumber(value1, value2, value3){
 // let largestNumber = maxValue(abcArray);
 // console.log("the largest value is: ", largestNumber);
 
-function reverseString(inputString){
-    let reversed = [];
-    for(i = inputString.length - 1; i >= 0; i--){
+// function reverseString(inputString){
+//     let reversed = [];
+//     for(i = inputString.length - 1; i >= 0; i--){
+//         let index = i;
+//         let element = inputString[index];
+//         console.log(element);
+//         reversed.push(element);
+//     }
+//     reversed = reversed.join("");
+//     return reversed;
+// }
+
+// let abcString = "I am Ahnaf";
+// let result = reverseString(abcString);
+// console.log(result);
+
+function reverseWord(inputString){
+    let joined = [];
+    let splitWord = inputString.split(" ");
+    for (let i = splitWord.length - 1; i >= 0; i--){
         let index = i;
-        let element = inputString[index];
-        console.log(element);
-        reversed.push(element);
+        let element = splitWord[index];
+        joined.push(element);
     }
-    reversed = reversed.join("");
-    return reversed;
+    
+    return joined.join(" ");
 }
 
-let abcString = "I am Ahnaf";
-let result = reverseString(abcString);
+let stringAbc = "I am Ahnaf";
+let result = reverseWord(stringAbc);
 console.log(result);
