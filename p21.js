@@ -249,3 +249,6 @@ const chinku = 77;
 
 let result = maxNumber(jim, dela, chinku);
 console.log("the largest value is: ", result);
+
+Math.max(jim, dela, chinku);
+
