@@ -289,18 +289,31 @@ function maxNumber(value1, value2, value3){
 // let result = reverseString(abcString);
 // console.log(result);
 
-function reverseWord(inputString){
-    let joined = [];
-    let splitWord = inputString.split(" ");
-    for (let i = splitWord.length - 1; i >= 0; i--){
-        let index = i;
-        let element = splitWord[index];
-        joined.push(element);
-    }
+// function reverseWord(inputString){
+//     let joined = [];
+//     let splitWord = inputString.split(" ");
+//     for (let i = splitWord.length - 1; i >= 0; i--){
+//         let index = i;
+//         let element = splitWord[index];
+//         joined.push(element);
+//     }
     
-    return joined.join(" ");
+//     return joined.join(" ");
+// }
+
+// let stringAbc = "I am Ahnaf";
+// let result = reverseWord(stringAbc);
+// console.log(result);
+
+function fibonacci(fibo){
+    for(let i = 2; i <= n; i++){
+        fibo[i] = fibo[i-1] + fibo[i-2];
+        output = fibo[i];
+    }
+    return output;
 }
 
-let stringAbc = "I am Ahnaf";
-let result = reverseWord(stringAbc);
-console.log(result);
+let inputValue = [0, 1];
+let n = 10;
+let result = fibonacci(inputValue);
+console.log("The 'n'th number of fibonacci value is: ", result);
