@@ -314,6 +314,6 @@ function fibonacci(fibo){
 }
 
 let inputValue = [0, 1];
-let n = 10;
+let n = 5;
 let result = fibonacci(inputValue);
 console.log("The 'n'th number of fibonacci value is: ", result);
