@@ -16,29 +16,49 @@
 // console.log(partial1);
 // console.log(odd);
 
-function picnic(inputArray){
-  let abcArray = [];
-  for(let i = 0; i < inputArray.length; i++){
-    let element = inputArray[i];
-    if(abcArray.includes(element) === false){
-      abcArray.push(element);
+// function picnic(inputArray){
+//   let abcArray = [];
+//   for(let i = 0; i < inputArray.length; i++){
+//     let element = inputArray[i];
+//     if(abcArray.includes(element) === false){
+//       abcArray.push(element);
+//     }
+//   }
+//   return abcArray;
+// }
+
+// let students = [
+//   "Ahnaf",
+//   "Akib",
+//   "Fahmida",
+//   "Protiva",
+//   "Rahman",
+//   "Protiva",
+//   "Akib",
+//   "Humayra",
+//   "Humayra",
+// ];
+
+// let result = picnic(students);
+// console.log(result);
+
+function foobarFunction(number){
+  for(let i = 1; i <= number; i++){
+    if(i % 3 === 0 && i % 5 === 0){
+      console.log("Foobar");
+    }
+    else if(i % 3 === 0){
+      console.log("Foo")
+    }
+    else if(i % 5 === 0){
+      console.log("Bar");
+    }
+    else{
+      console.log(i);
     }
   }
-  return abcArray;
+  
 }
 
-let students = [
-  "Ahnaf",
-  "Akib",
-  "Fahmida",
-  "Protiva",
-  "Rahman",
-  "Protiva",
-  "Akib",
-  "Humayra",
-  "Humayra",
-];
-
-let result = picnic(students);
-console.log(result);
-
+let input = 100;
+foobarFunction(input);
