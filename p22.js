@@ -71,7 +71,7 @@
 //         if(element.price < chepestPhone.price){
 //             chepestPhone = element;
 //         }
-        
+
 //     }
 //     return chepestPhone;
 // }
@@ -111,7 +111,7 @@
 //     if(element.price < cheapestPhone.price){
 //       cheapestPhone = element;
 //   }
-  
+
 // }
 //   return cheapestPhone;
 // }
@@ -143,31 +143,51 @@
 // let result = phoneQuery(phoneDetails);
 // console.log("The cheapest phone is: ", result);
 
-function sumOfProductPrice(input){
+// function sumOfProductPrice(input){
+//   let sum = 0;
+//   for(i = 0; i < input.length; i++){
+//     let element = input[i];
+//     sum = sum + element.price;
+//   }
+//   return sum;
+// }
+
+// const shoppingCart = [
+//   {
+//     productName: "Shirt",
+//     price: 500
+//   },
+//   {
+//     productName: "Pant",
+//     price: 550
+//   },
+//   {
+//     productName: "Shirt",
+//     price: 450
+//   }
+
+// ];
+
+// let result = sumOfProductPrice(shoppingCart);
+// console.log(result);
+
+function sumOfProductPrices(input){
   let sum = 0;
   for(i = 0; i < input.length; i++){
-    let element = input[i];
-    sum = sum + element.price;
+    let index = i;
+    let element = input[index];
+    let individualProductCost = element.productPrice * element.productQuantity;
+    sum = sum + individualProductCost;
   }
   return sum;
 }
 
-
-const shoppingCart = [
-  {
-    productName: "Shirt",
-    price: 500
-  },
-  {
-    productName: "Pant",
-    price: 550
-  },
-  {
-    productName: "Shirt",
-    price: 450
-  }
-
+let shoppingCart = [
+  { productName: "Shirt", productPrice: 500, productQuantity: 2 },
+  { productName: "Pant", productPrice: 700, productQuantity: 3 },
+  { productName: "Shoe", productPrice: 1200, productQuantity: 1 },
+  { productName: "Cap", productPrice: 50, productQuantity: 5 },
 ];
 
-let result = sumOfProductPrice(shoppingCart);
+let result = sumOfProductPrices(shoppingCart);
 console.log(result);
