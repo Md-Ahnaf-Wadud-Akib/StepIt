@@ -103,42 +103,71 @@
 // let result = choosePhone(phoneDetails);
 // console.log(result);
 
-function phoneQuery(inputArray){
-  cheapestPhone = inputArray[0];
-  for(i = 0; i < inputArray.length; i++){
-    let index = i;
-    let element = inputArray[index];
-    if(element.price < cheapestPhone.price){
-      cheapestPhone = element;
-  }
+// function phoneQuery(inputArray){
+//   cheapestPhone = inputArray[0];
+//   for(i = 0; i < inputArray.length; i++){
+//     let index = i;
+//     let element = inputArray[index];
+//     if(element.price < cheapestPhone.price){
+//       cheapestPhone = element;
+//   }
   
-}
-  return cheapestPhone;
-}
+// }
+//   return cheapestPhone;
+// }
 
-let phoneDetails = [
-  {
-    name: "Samsung",
-    camera: 50,
-    price: 8000,
-    color: "Silver",
-    ram: 8
-  },
-  {
-    name: "Oppo",
-    camera: 20,
-    price: 5000,
-    color: "Silver",
-    ram: 2
-  },
-  {
-    name: "Nokia",
-    camera: 50,
-    price: 12000,
-    color: "Black",
-    ram: 16
+// let phoneDetails = [
+//   {
+//     name: "Samsung",
+//     camera: 50,
+//     price: 8000,
+//     color: "Silver",
+//     ram: 8
+//   },
+//   {
+//     name: "Oppo",
+//     camera: 20,
+//     price: 5000,
+//     color: "Silver",
+//     ram: 2
+//   },
+//   {
+//     name: "Nokia",
+//     camera: 50,
+//     price: 12000,
+//     color: "Black",
+//     ram: 16
+//   }
+// ]
+
+// let result = phoneQuery(phoneDetails);
+// console.log("The cheapest phone is: ", result);
+
+function sumOfProductPrice(input){
+  let sum = 0;
+  for(i = 0; i < input.length; i++){
+    let element = input[i];
+    sum = sum + element.price;
   }
-]
+  return sum;
+}
 
-let result = phoneQuery(phoneDetails);
-console.log("The cheapest phone is: ", result);
+
+const shoppingCart = [
+  {
+    productName: "Shirt",
+    price: 500
+  },
+  {
+    productName: "Pant",
+    price: 550
+  },
+  {
+    productName: "Shirt",
+    price: 450
+  }
+
+];
+
+let result = sumOfProductPrice(shoppingCart);
+console.log(result);
