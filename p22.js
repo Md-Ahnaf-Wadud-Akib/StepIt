@@ -63,42 +63,82 @@
 // let input = 100;
 // foobarFunction(input);
 
-function choosePhone(inputArray){
-    let chepestPhone = inputArray[0];
-    for(let i = 0; i < inputArray.length; i++){
-        let index = i;
-        let element = inputArray[index];
-        if(element.price < chepestPhone.price){
-            chepestPhone = element;
-        }
+// function choosePhone(inputArray){
+//     let chepestPhone = inputArray[0];
+//     for(let i = 0; i < inputArray.length; i++){
+//         let index = i;
+//         let element = inputArray[index];
+//         if(element.price < chepestPhone.price){
+//             chepestPhone = element;
+//         }
         
-    }
-    return chepestPhone;
+//     }
+//     return chepestPhone;
+// }
+
+// let phoneDetails = [
+//   {
+//     name: "Samsung",
+//     camera: 50,
+//     storage: 128,
+//     price: 7000,
+//     color: "Black"
+//   },
+//   {
+//     name: "Oppo",
+//     camera: 20,
+//     storage: 28,
+//     price: 4000,
+//     color: "Black"
+//   },
+//   {
+//     name: "Nokia",
+//     camera: 80,
+//     storage: 128,
+//     price: 12000,
+//     color: "Silver"
+//   }
+// ];
+
+// let result = choosePhone(phoneDetails);
+// console.log(result);
+
+function phoneQuery(inputArray){
+  cheapestPhone = inputArray[0];
+  for(i = 0; i < inputArray.length; i++){
+    let index = i;
+    let element = inputArray[index];
+    if(element.price < cheapestPhone.price){
+      cheapestPhone = element;
+  }
+  
+}
+  return cheapestPhone;
 }
 
 let phoneDetails = [
   {
     name: "Samsung",
     camera: 50,
-    storage: 128,
-    price: 7000,
-    color: "Black"
+    price: 8000,
+    color: "Silver",
+    ram: 8
   },
   {
     name: "Oppo",
     camera: 20,
-    storage: 28,
-    price: 4000,
-    color: "Black"
+    price: 5000,
+    color: "Silver",
+    ram: 2
   },
   {
     name: "Nokia",
-    camera: 80,
-    storage: 128,
+    camera: 50,
     price: 12000,
-    color: "Silver"
+    color: "Black",
+    ram: 16
   }
-];
+]
 
-let result = choosePhone(phoneDetails);
-console.log(result);
+let result = phoneQuery(phoneDetails);
+console.log("The cheapest phone is: ", result);
