@@ -42,23 +42,63 @@
 // let result = picnic(students);
 // console.log(result);
 
-function foobarFunction(number){
-  for(let i = 1; i <= number; i++){
-    if(i % 3 === 0 && i % 5 === 0){
-      console.log("Foobar");
+// function foobarFunction(number){
+//   for(let i = 1; i <= number; i++){
+//     if(i % 3 === 0 && i % 5 === 0){
+//       console.log("Foobar");
+//     }
+//     else if(i % 3 === 0){
+//       console.log("Foo")
+//     }
+//     else if(i % 5 === 0){
+//       console.log("Bar");
+//     }
+//     else{
+//       console.log(i);
+//     }
+//   }
+
+// }
+
+// let input = 100;
+// foobarFunction(input);
+
+function choosePhone(inputArray){
+    let chepestPhone = inputArray[0];
+    for(let i = 0; i < inputArray.length; i++){
+        let index = i;
+        let element = inputArray[index];
+        if(element.price < chepestPhone.price){
+            chepestPhone = element;
+        }
+        
     }
-    else if(i % 3 === 0){
-      console.log("Foo")
-    }
-    else if(i % 5 === 0){
-      console.log("Bar");
-    }
-    else{
-      console.log(i);
-    }
-  }
-  
+    return chepestPhone;
 }
 
-let input = 100;
-foobarFunction(input);
+let phoneDetails = [
+  {
+    name: "Samsung",
+    camera: 50,
+    storage: 128,
+    price: 7000,
+    color: "Black"
+  },
+  {
+    name: "Oppo",
+    camera: 20,
+    storage: 28,
+    price: 4000,
+    color: "Black"
+  },
+  {
+    name: "Nokia",
+    camera: 80,
+    storage: 128,
+    price: 12000,
+    color: "Silver"
+  }
+];
+
+let result = choosePhone(phoneDetails);
+console.log(result);
