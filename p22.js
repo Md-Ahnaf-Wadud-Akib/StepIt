@@ -222,20 +222,34 @@
 // let result = ticketPrice(numberOfTicket);
 // console.log("The price of all tickets are:", result);
 
-function add(num1, num2) {
+// function add(num1, num2) {
     
+//     if(typeof num1 !== "number" || typeof num2 !== "number"){
+//         let show = "Please enter a valid number!!"
+//         return show;
+//     }
+//     else{
+//         let sum = num1 + num2;
+//         return sum;
+//     }
+    
+// }
+
+// let input1 = 2;
+// let input2 = "3";
+// let result = add(input1, input2);
+// console.log("The sum of", input1, "&", input2, "is:", result);
+
+function add(num1, num2){
     if(typeof num1 !== "number" || typeof num2 !== "number"){
-        let show = "Please enter a valid number!!"
-        return show;
-    }
-    else{
-        let sum = num1 + num2;
+        let num1Int = parseInt(num1);
+        let num2Int = parseInt(num2);
+        let sum = num1Int + num2Int;
         return sum;
     }
-    
 }
 
-let input1 = 2;
+let input1 = "2";
 let input2 = "3";
 let result = add(input1, input2);
-console.log("The sum of", input1, "&", input2, "is:", result);
+console.log(result);
