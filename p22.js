@@ -304,20 +304,29 @@
 // let result = bestFriend(abcArray);
 // console.log(result);
 
-function onlyPositive(inputArray){
-    let outputArray = [];
-    for(i = 0; i < inputArray.length; i++){
-        let element = inputArray[i];
-        if(element < 0){
-            break;
-        }
-        else{
-            outputArray.push(element);
-        }
-    }
-    return outputArray;
+// function onlyPositive(inputArray){
+//     let outputArray = [];
+//     for(i = 0; i < inputArray.length; i++){
+//         let element = inputArray[i];
+//         if(element < 0){
+//             break;
+//         }
+//         else{
+//             outputArray.push(element);
+//         }
+//     }
+//     return outputArray;
     
+// }
+// let abcArray = [45, 87, 96, 11, 63, -56, 71, 28];
+// let result = onlyPositive(abcArray);
+// console.log(result);
+
+function cubeNumber(number){
+    let cube = Math.pow(number, 3);
+    return cube;
 }
-let abcArray = [45, 87, 96, 11, 63, -56, 71, 28];
-let result = onlyPositive(abcArray);
+
+let input = 4;
+let result = cubeNumber(input);
 console.log(result);
