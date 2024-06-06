@@ -288,18 +288,36 @@
 // let result = pageRequirements(book1, book2, book3);
 // console.log("Total number of pages are:", result);
 
-function bestFriend(input){
-    let largestName = input[0];
-    for(i = 0; i < input.length; i++){
-        let element = input[i];
-        if(element.length > largestName.length){
-            largestName = element;
+// function bestFriend(input){
+//     let largestName = input[0];
+//     for(i = 0; i < input.length; i++){
+//         let element = input[i];
+//         if(element.length > largestName.length){
+//             largestName = element;
+//         }
+//     }
+//     return largestName;
+    
+// }
+
+// let abcArray = ["Sajid", "Mamun", "Kamal", "jubayer bin rased", "Chinku"];
+// let result = bestFriend(abcArray);
+// console.log(result);
+
+function onlyPositive(inputArray){
+    let outputArray = [];
+    for(i = 0; i < inputArray.length; i++){
+        let element = inputArray[i];
+        if(element < 0){
+            break;
+        }
+        else{
+            outputArray.push(element);
         }
     }
-    return largestName;
+    return outputArray;
     
 }
-
-let abcArray = ["Sajid", "Mamun", "Kamal", "jubayer bin rased", "Chinku"];
-let result = bestFriend(abcArray);
+let abcArray = [45, 87, 96, 11, 63, -56, 71, 28];
+let result = onlyPositive(abcArray);
 console.log(result);
