@@ -223,7 +223,7 @@
 // console.log("The price of all tickets are:", result);
 
 // function add(num1, num2) {
-    
+
 //     if(typeof num1 !== "number" || typeof num2 !== "number"){
 //         let show = "Please enter a valid number!!"
 //         return show;
@@ -232,7 +232,7 @@
 //         let sum = num1 + num2;
 //         return sum;
 //     }
-    
+
 // }
 
 // let input1 = 2;
@@ -240,16 +240,50 @@
 // let result = add(input1, input2);
 // console.log("The sum of", input1, "&", input2, "is:", result);
 
-function add(num1, num2){
-    if(typeof num1 !== "number" || typeof num2 !== "number"){
-        let num1Int = parseInt(num1);
-        let num2Int = parseInt(num2);
-        let sum = num1Int + num2Int;
-        return sum;
-    }
+// function add(num1, num2){
+//     if(typeof num1 !== "number" || typeof num2 !== "number"){
+//         let num1Int = parseInt(num1);
+//         let num2Int = parseInt(num2);
+//         let sum = num1Int + num2Int;
+//         return sum;
+//     }
+// }
+
+// let input1 = "2";
+// let input2 = "3";
+// let result = add(input1, input2);
+// console.log(result);
+
+// function feetToInch(feet){
+//     let inch = feet * 12;
+//     return inch;
+// }
+
+// let input = 1.5;
+// let result = feetToInch(input);
+// console.log(result);
+
+// function centimeterToMeter(centimeter){
+//     let meter = centimeter * 0.01;
+//     return meter;
+// }
+
+// let inputValue = 5;
+// let result2 = centimeterToMeter(inputValue);
+// console.log(result2);
+
+function pageRequirements(input1, input2, input3) {
+  let book1Pages = 100;
+  let book2Pages = 200;
+  let book3Pages = 300;
+
+  let totalPages = (book1Pages * input1) + (book2Pages * input2) + (book3Pages * input3);
+  return totalPages;
 }
 
-let input1 = "2";
-let input2 = "3";
-let result = add(input1, input2);
-console.log(result);
+let book1 = 2;
+let book2 = 3;
+let book3 = 1;
+
+let result = pageRequirements(book1, book2, book3);
+console.log("Total number of pages are:", result);
