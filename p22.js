@@ -272,18 +272,34 @@
 // let result2 = centimeterToMeter(inputValue);
 // console.log(result2);
 
-function pageRequirements(input1, input2, input3) {
-  let book1Pages = 100;
-  let book2Pages = 200;
-  let book3Pages = 300;
+// function pageRequirements(input1, input2, input3) {
+//   let book1Pages = 100;
+//   let book2Pages = 200;
+//   let book3Pages = 300;
 
-  let totalPages = (book1Pages * input1) + (book2Pages * input2) + (book3Pages * input3);
-  return totalPages;
+//   let totalPages = (book1Pages * input1) + (book2Pages * input2) + (book3Pages * input3);
+//   return totalPages;
+// }
+
+// let book1 = 2;
+// let book2 = 3;
+// let book3 = 1;
+
+// let result = pageRequirements(book1, book2, book3);
+// console.log("Total number of pages are:", result);
+
+function bestFriend(input){
+    let largestName = input[0];
+    for(i = 0; i < input.length; i++){
+        let element = input[i];
+        if(element.length > largestName.length){
+            largestName = element;
+        }
+    }
+    return largestName;
+    
 }
 
-let book1 = 2;
-let book2 = 3;
-let book3 = 1;
-
-let result = pageRequirements(book1, book2, book3);
-console.log("Total number of pages are:", result);
+let abcArray = ["Sajid", "Mamun", "Kamal", "jubayer bin rased", "Chinku"];
+let result = bestFriend(abcArray);
+console.log(result);
