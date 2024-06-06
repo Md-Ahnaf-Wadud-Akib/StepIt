@@ -192,32 +192,50 @@
 // let result = sumOfProductPrices(shoppingCart);
 // console.log(result);
 
-function ticketPrice(ticketQuantity){
-    const first100TicketPrice = 100;
-    const second100TicketPrice = 90;
-    const third100TicketPrice = 80;
-    if(ticketQuantity <= 100){
-        let totalTicketPrice = first100TicketPrice * ticketQuantity;
-        return totalTicketPrice;
-    }
-    else if(ticketQuantity <= 200){
-        let first100TicketRate = first100TicketPrice * 100;
-        let extraTicket = ticketQuantity - 100;
-        let extraTicketRate = extraTicket * second100TicketPrice;
-        let totalTicketPrice200 = first100TicketRate + extraTicketRate;
-        return totalTicketPrice200;
+// function ticketPrice(ticketQuantity){
+//     const first100TicketPrice = 100;
+//     const second100TicketPrice = 90;
+//     const third100TicketPrice = 80;
+//     if(ticketQuantity <= 100){
+//         let totalTicketPrice = first100TicketPrice * ticketQuantity;
+//         return totalTicketPrice;
+//     }
+//     else if(ticketQuantity <= 200){
+//         let first100TicketRate = first100TicketPrice * 100;
+//         let extraTicket = ticketQuantity - 100;
+//         let extraTicketRate = extraTicket * second100TicketPrice;
+//         let totalTicketPrice200 = first100TicketRate + extraTicketRate;
+//         return totalTicketPrice200;
+//     }
+//     else{
+//         let first100rate = first100TicketPrice * 100;
+//         // let second100 = ticketQuantity - 100;
+//         let second100Rate = 100 * second100TicketPrice;
+//         let third100 = ticketQuantity - 200;
+//         let third100Rate = third100 * third100TicketPrice;
+//         let totalTicketprice300 = first100rate + second100Rate + third100Rate;
+//         return totalTicketprice300;
+//     }
+// }
+
+// let numberOfTicket = 320;
+// let result = ticketPrice(numberOfTicket);
+// console.log("The price of all tickets are:", result);
+
+function add(num1, num2) {
+    
+    if(typeof num1 !== "number" || typeof num2 !== "number"){
+        let show = "Please enter a valid number!!"
+        return show;
     }
     else{
-        let first100rate = first100TicketPrice * 100;
-        // let second100 = ticketQuantity - 100;
-        let second100Rate = 100 * second100TicketPrice;
-        let third100 = ticketQuantity - 200;
-        let third100Rate = third100 * third100TicketPrice;
-        let totalTicketprice300 = first100rate + second100Rate + third100Rate;
-        return totalTicketprice300;
+        let sum = num1 + num2;
+        return sum;
     }
+    
 }
 
-let numberOfTicket = 320;
-let result = ticketPrice(numberOfTicket);
-console.log("The price of all tickets is:", result);
+let input1 = 2;
+let input2 = "3";
+let result = add(input1, input2);
+console.log("The sum of", input1, "&", input2, "is:", result);
