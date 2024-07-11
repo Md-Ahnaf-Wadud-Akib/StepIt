@@ -10,18 +10,34 @@
 
 // mahib = biham
 
-let array = "mahib";
-// console.log(array.length);
+// let array = "mahib";
+// // console.log(array.length);
 
-for(let i = array.length; i >= 0; i--){
+// for(let i = array.length; i >= 0; i--){
 
 
 
-    let element = array[i];
-    console.log(element);
+//     let element = array[i];
+//     console.log(element);
     
     
+// }
+
+// 80 = A+, 60 = A, 30 = F
+
+
+let marks = 45;
+if(marks > 79){
+    console.log("A+");
 }
+else if (marks > 59){
+    console.log("A")
+}
+else{
+    console.log("You have failed");
+}
+
+
 
 
 
