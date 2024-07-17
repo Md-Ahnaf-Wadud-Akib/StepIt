@@ -26,21 +26,28 @@
 // 80 = A+, 60 = A, 30 = F
 
 
-let marks = 45;
-if(marks > 79){
-    console.log("A+");
+// let marks = 45;
+// if(marks > 79){
+//     console.log("A+");
+// }
+// else if (marks > 59){
+//     console.log("A")
+// }
+// else{
+//     console.log("You have failed");
+// }
+
+
+
+let abcArray = [23, 78, 105, 98, 235, 1001];
+
+let sum = 0;
+
+for(let i = 0; i < abcArray.length; i++){
+    let element = abcArray[i];
+    sum = sum + element;
 }
-else if (marks > 59){
-    console.log("A")
-}
-else{
-    console.log("You have failed");
-}
-
-
-
-
-
+console.log(sum);
 
 
 
