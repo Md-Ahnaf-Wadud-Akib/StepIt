@@ -11,12 +11,82 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[url(image)]">
+  <body
+    class="bg-[#181818] min-h-screen bg-[url('images/background.png')] bg-no-repeat bg-center flex flex-col justify-center items-center gap-4"
+  >
     <main>
       <!-- game section -->
-      <section></section>
+      <section class="flex flex-col justify-center items-center gap-8 hidden">
+        <h1 class="text-7xl">Skill Up Your Typing Speed</h1>
+        <h3>Click the play button to start the game</h3>
+        <button class="btn">Play Now</button>
+      </section>
       <!-- Play game section -->
-      <section></section>
+      <section>
+        <div
+          class="bg-[#ffffff31] border-[10px] border-black rounded-lg flex flex-col justify-center items-center text-8xl text-black"
+        >
+          <h4 class="text-[18px] text-white bg-black px-5 pb-3 rounded-b-lg">
+            Don't look at the keyboard while playing
+          </h4>
+          <div
+            class="artboard artboard-horizontal phone-6 flex flex-col justify-center items-center text-8xl text-black"
+          >
+            Y
+          </div>
+        </div>
+
+        <div>
+          <div class="my-1 flex w-full justify-center gap-1">
+            <kbd class="kbd">q</kbd>
+            <kbd class="kbd">w</kbd>
+            <kbd class="kbd">e</kbd>
+            <kbd class="kbd">r</kbd>
+            <kbd class="kbd">t</kbd>
+            <kbd class="kbd">y</kbd>
+            <kbd class="kbd">u</kbd>
+            <kbd class="kbd">i</kbd>
+            <kbd class="kbd">o</kbd>
+            <kbd class="kbd">p</kbd>
+          </div>
+          <div class="my-1 flex w-full justify-center gap-1">
+            <kbd class="kbd">a</kbd>
+            <kbd class="kbd">s</kbd>
+            <kbd class="kbd">d</kbd>
+            <kbd class="kbd">f</kbd>
+            <kbd class="kbd">g</kbd>
+            <kbd class="kbd">h</kbd>
+            <kbd class="kbd">j</kbd>
+            <kbd class="kbd">k</kbd>
+            <kbd class="kbd">l</kbd>
+          </div>
+          <div class="my-1 flex w-full justify-center gap-1">
+            <kbd class="kbd">z</kbd>
+            <kbd class="kbd">x</kbd>
+            <kbd class="kbd">c</kbd>
+            <kbd class="kbd">v</kbd>
+            <kbd class="kbd">b</kbd>
+            <kbd class="kbd">n</kbd>
+            <kbd class="kbd">m</kbd>
+            <kbd class="kbd">/</kbd>
+          </div>
+        </div>
+
+        <!-- score & life button -->
+         <div class="flex justify-between px-[50px]">
+            <button class="btn text-[18px] bg-[#894189] border rounded-full px-[30px]">
+                Life
+                <img src="images/icons/Group 23.png" alt="">
+                <span class="text-[18px]">1</span>
+              </button>
+
+              <button class="btn text-[18px] bg-[#360490] rounded-full px-[30px]">
+                Score
+                <img src="images/icons/monetization_on.png" alt="">
+                <span class="text-[18px]">1</span>
+              </button>
+         </div>
+      </section>
     </main>
   </body>
 </html>
