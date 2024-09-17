@@ -17,13 +17,13 @@
   >
     <main>
       <!-- game section -->
-      <section class="flex flex-col justify-center items-center gap-8 hidden">
-        <h1 class="text-7xl">Skill Up Your Typing Speed</h1>
+      <section id="intro-section" class="flex flex-col justify-center items-center gap-8">
+        <h1 class="text-7xl text-white">Skill Up Your Typing Speed</h1>
         <h3>Click the play button to start the game</h3>
-        <button class="btn">Play Now</button>
+        <button id="intro-btn" class="btn">Play Now</button>
       </section>
       <!-- Play game section -->
-      <section class="hidden">
+      <section id="playground-section" class="hidden">
         <div
           class="bg-[#ffffff31] border-[10px] border-black rounded-lg flex flex-col justify-center items-center text-8xl text-black"
         >
@@ -91,7 +91,7 @@
         </div>
       </section>
       <!-- end game / score  -->
-      <section>
+      <section class="hidden">
         <div class="bgCss px-[90px] py-[70px] flex flex-col justify-center items-center gap-[10px]" >
           <h1 class="text-4xl text-white">SCORE: <span>14</span></h1>
           <button class="btn">Play Again</button>
@@ -99,5 +99,9 @@
         </div>
       </section>
     </main>
+
+    <!-- script -->
+     <script src="js/utility.js"></script>
+     <script src="js/alpha.js"></script>
   </body>
 </html>
