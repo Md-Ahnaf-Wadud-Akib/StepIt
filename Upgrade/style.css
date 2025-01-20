@@ -3,23 +3,3 @@
     padding: 0px;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blanchedalmond;
-    height: 100vh;
-    margin: 0;
-}
-
-.form label {
-  display: block;
-  padding-bottom: 20px;
-  font-size: 18px;
-}
-
-.input-box{
-    padding: 5px 8px;
-}
-
-
