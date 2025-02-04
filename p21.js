@@ -230,17 +230,17 @@
 // a = a - b;
 // console.log(a, b);
 
-function maxNumber(value1, value2, value3){
-    if(value1 > value2 && value1 > value3){
-        return value1;
-    }
-    else if(value2 > value1 && value2 > value3){
-        return value2;
-    }
-    else{
-        return value3;
-    }
-}
+// function maxNumber(value1, value2, value3){
+//     if(value1 > value2 && value1 > value3){
+//         return value1;
+//     }
+//     else if(value2 > value1 && value2 > value3){
+//         return value2;
+//     }
+//     else{
+//         return value3;
+//     }
+// }
 
 
 // const jim = 84;
@@ -305,15 +305,18 @@ function maxNumber(value1, value2, value3){
 // let result = reverseWord(stringAbc);
 // console.log(result);
 
-function fibonacci(fibo){
-    for(let i = 2; i <= n; i++){
-        fibo[i] = fibo[i-1] + fibo[i-2];
-        output = fibo[i];
-    }
-    return output;
-}
+// function fibonacci(fibo){
+//     for(let i = 2; i <= n; i++){
+//         fibo[i] = fibo[i-1] + fibo[i-2];
+//         output = fibo[i];
+//     }
+//     return output;
+// }
 
-let inputValue = [0, 1];
-let n = 5;
-let result = fibonacci(inputValue);
-console.log("The 'n'th number of fibonacci value is: ", result);
+// let inputValue = [0, 1];
+// let n = 5;
+// let result = fibonacci(inputValue);
+// console.log("The 'n'th number of fibonacci value is: ", result);
+
+
+
