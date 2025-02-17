@@ -10,24 +10,102 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <div class="mockup-phone">
-      <div class="camera"></div>
-      <div class="display">
-        <div class="artboard artboard-demo phone-1">
-          <div class="stats bg-primary text-primary-content">
-            <div class="stat">
-              <div class="stat-title">Current balance</div>
-              <div class="stat-value">$89,400</div>
-              <div class="stat-actions">
-                <button class="btn btn-sm">Withdrawal</button>
-                <button class="btn btn-sm">Deposit</button>
+  <body class="min-h-screen">
+    <main class="flex justify-center items-center bg-black min-h-screen">
+      <section>
+        <div class="mockup-phone">
+          <div class="camera"></div>
+          <div class="display">
+            <div class="artboard artboard-demo phone-1">
+              <!-- Account Balance -->
+              <div class="stats bg-primary text-primary-content hidden">
+                <div class="stat">
+                  <div class="stat-title text-gray-800">Current balance</div>
+                  <div class="stat-value">$89,400</div>
+                  <div class="stat-actions">
+                    <button id="withdrawal-btn" class="btn btn-sm">
+                      Withdrawal
+                    </button>
+                    <button id="deposit-btn" class="btn btn-sm">Deposit</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Withdrawal Form -->
+              <div
+                class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden"
+              >
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text text-[16px]">Amount</span>
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Please enter your amount"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text text-[16px]">PIN</span>
+                    </label>
+                    <input
+                      type="password"
+                      placeholder="Please enter your pin number"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button class="btn btn-primary">Withdrawal</button>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Deposit Form -->
+              <div
+                class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden"
+              >
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text text-[16px]">Amount</span>
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Please enter your amount"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text text-[16px]">PIN</span>
+                    </label>
+                    <input
+                      type="password"
+                      placeholder="Please enter your pin number"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button class="btn btn-primary">Deposit</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
+
+    <!-- ****************************************** JS ******************************************************* -->
+    <script src="js/gopay.js"></script>
   </body>
 </html>
