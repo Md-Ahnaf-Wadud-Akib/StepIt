@@ -22,7 +22,10 @@
             <!-- phone body -->
             <div class="artboard artboard-demo phone-1">
               <!-- Account Balance -->
-              <div id="home-screen" class="stats bg-primary text-primary-content">
+              <div
+                id="home-screen"
+                class="stats bg-primary text-primary-content"
+              >
                 <div class="stat">
                   <div class="stat-title text-gray-800">Current balance</div>
                   <div class="stat-value">$89,400</div>
@@ -35,70 +38,100 @@
                 </div>
               </div>
 
-              <!-- Withdrawal Form -->
-              <div
-                id="withdrawal-screen" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden"
-              >
-                <form class="card-body">
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text text-[16px]">Amount</span>
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Please enter your amount"
-                      class="input input-bordered"
-                      required
-                    />
+              <!-- Withdrawal Screen -->
+
+              <div id="withdrawal-screen" class="hidden">
+                <div class="flex justify-center pb-[10px]">
+                  <div class="stats bg-primary text-primary-content">
+                    <div class="stat">
+                      <div class="stat-title text-gray-800">
+                        Current balance
+                      </div>
+                      <div class="stat-value">$89,400</div>
+                    </div>
                   </div>
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text text-[16px]">PIN</span>
-                    </label>
-                    <input
-                      type="password"
-                      placeholder="Please enter your pin number"
-                      class="input input-bordered"
-                      required
-                    />
-                  </div>
-                  <div class="form-control mt-6">
-                    <button class="btn btn-primary">Withdrawal</button>
-                  </div>
-                </form>
+                </div>
+
+                <!-- Withdrawal Form -->
+                <div
+                  class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+                >
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text text-[16px]">Amount</span>
+                      </label>
+                      <input id="amount-text"
+                        type="text"
+                        placeholder="Please enter your amount"
+                        class="input input-bordered"
+                        required
+                      />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text text-[16px]">PIN</span>
+                      </label>
+                      <input id="pin-password"
+                        type="password"
+                        placeholder="Please enter your pin number"
+                        class="input input-bordered"
+                        required
+                      />
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="withdrawal-submit" class="btn btn-primary">Withdrawal</button>
+                    </div>
+                  </form>
+                </div>
               </div>
 
-              <!-- Deposit Form -->
-              <div
-                id="deposit-screen" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden"
-              >
-                <form class="card-body">
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text text-[16px]">Amount</span>
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Please enter your amount"
-                      class="input input-bordered"
-                      required
-                    />
+              <!-- Deposit Screen -->
+
+              <div id="deposit-screen" class="hidden">
+                <div class="flex justify-center pb-[10px]">
+                  <div class="stats bg-primary text-primary-content">
+                    <div class="stat">
+                      <div class="stat-title text-gray-800">
+                        Current balance
+                      </div>
+                      <div class="stat-value">$89,400</div>
+                    </div>
                   </div>
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text text-[16px]">PIN</span>
-                    </label>
-                    <input
-                      type="password"
-                      placeholder="Please enter your pin number"
-                      class="input input-bordered"
-                      required
-                    />
-                  </div>
-                  <div class="form-control mt-6">
-                    <button class="btn btn-primary">Deposit</button>
-                  </div>
-                </form>
+                </div>
+
+                <!-- Deposit Form -->
+                <div
+                  class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+                >
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text text-[16px]">Amount</span>
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Please enter your amount"
+                        class="input input-bordered"
+                        required
+                      />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text text-[16px]">PIN</span>
+                      </label>
+                      <input
+                        type="password"
+                        placeholder="Please enter your pin number"
+                        class="input input-bordered"
+                        required
+                      />
+                    </div>
+                    <div class="form-control mt-6">
+                      <button class="btn btn-primary">Deposit</button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
