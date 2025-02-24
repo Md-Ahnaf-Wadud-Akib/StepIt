@@ -44,3 +44,26 @@ withdrawalSubmit.addEventListener("click", function (event) {
     }
   }
 });
+
+// deposit Screen
+
+const depositSubmitBtn = document.getElementById("deposit-submit-btn");
+depositSubmitBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  const depositAmountField = document.getElementById("deposit-amount-field");
+  const depositAmount = depositAmountField.value;
+  const depositAmountValue = parseFloat(depositAmount);
+
+  const depositPassword = document.getElementById("deposit-password");
+  const depositPasswordValue = parseFloat(depositPassword);
+
+  if (depositPasswordValue === "987") {
+    const previousAmount = document.getElementById("previous-amount").innerText;
+    const previousAmountValue = parseFloat(previousAmount);
+
+    const currentAmountValue = previousAmountValue + depositAmountValue;
+    document.getElementById("previous-amount").innerText = currentAmountValue;
+  } else {
+    alert(`Please enter the required fields for money deposit`);
+  }
+});

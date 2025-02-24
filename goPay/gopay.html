@@ -101,7 +101,7 @@
                       <div class="stat-title text-gray-800">
                         Current balance
                       </div>
-                      <div class="stat-value">$89,400</div>
+                      <div class="stat-value">$<span id="previous-amount">89400</span></div>
                     </div>
                   </div>
                 </div>
@@ -115,7 +115,7 @@
                       <label class="label">
                         <span class="label-text text-[16px]">Amount</span>
                       </label>
-                      <input
+                      <input id="deposit-amount-field"
                         type="text"
                         placeholder="Please enter your amount"
                         class="input input-bordered"
@@ -124,7 +124,7 @@
                     </div>
                     <div class="form-control">
                       <label class="label">
-                        <span class="label-text text-[16px]">PIN</span>
+                        <span id="deposit-password" class="label-text text-[16px]">PIN</span>
                       </label>
                       <input
                         type="password"
@@ -134,7 +134,7 @@
                       />
                     </div>
                     <div class="form-control mt-6">
-                      <button class="btn btn-primary">Deposit</button>
+                      <button id="deposit-submit-btn" class="btn btn-primary">Deposit</button>
                     </div>
                   </form>
                 </div>
