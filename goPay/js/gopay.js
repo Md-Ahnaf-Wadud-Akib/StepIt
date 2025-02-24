@@ -29,7 +29,13 @@ withdrawalSubmit.addEventListener("click", function () {
     alert("Please enter the amount and your password");
   } else {
     if (pinPassword === "987") {
-      
+      const previousAccountBalance = document.getElementById(
+        "previous-account-balance"
+      ).innerText;
+      const previousAccountBalanceValue = parseFloat(previousAccountBalance);
+      const currentAccountBalance = previousAccountBalance - amountNumber;
+      document.getElementById("previous-account-balance").innerText =
+        currentAccountBalance;
     } else {
       alert("Your inserted password is wrong");
     }
