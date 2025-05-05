@@ -1,0 +1,10 @@
+.image1{
+    width: 250px;
+    height: 250px;
+}
+
+.mainSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
