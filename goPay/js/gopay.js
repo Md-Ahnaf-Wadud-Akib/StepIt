@@ -30,7 +30,7 @@ withdrawalSubmit.addEventListener("click", function (event) {
     alert("Please enter the amount and your password");
   } else {
     if (pinPassword === "987") {
-      const previousAccountBalance = document.getElementById(
+      const previousAccountBalance = document.getElementById( 
         "previous-account-balance"
       ).innerText;
       console.log(previousAccountBalance);
