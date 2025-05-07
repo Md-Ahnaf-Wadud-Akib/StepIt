@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  padding: 0px;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffbef;
+  padding: 80px 250px;
+}
+
+.hero-title {
+  color: #f9bd4b;
+  font-size: 60px;
+}
+
+.water-text {
+  color: #363857;
+  font-size: 60px;
+  margin-top: -50px;
+}
+
+.hero-section-button {
+  background-color: #94ae2f;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.hero-paragraph {
+  padding-right: 400px;
+  margin-top: -50px;
+}
+
+.hero-img-div img {
+  width: 550px;
+}
